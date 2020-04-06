@@ -1,8 +1,7 @@
 #!/bin/bash
 
 set -eux
-# COUNT=$(ls -l | wc -l)
-COUNT='2'
+COUNT='1'
 
 if [ $COUNT = '2' ]; then
     exit 1
