@@ -1,0 +1,16 @@
+name: test
+
+on:
+  push:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: test.bash
+        run: /home/runner/work/actions-test/actions-test/.github/scripts/test.bash
